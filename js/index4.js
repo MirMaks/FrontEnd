@@ -1,4 +1,4 @@
-// Почему этот вариант кода считает одинаковыми числа, только если ввести три 111. Все остальные значения - different
+// Почему этот вариант кода считает одинаковыми числа, только если ввести три 111?. Все остальные значения - different
 
 // const threeDigitNumber = Number(prompt('Enter a three-digit number'))
 // const firstNumber = threeDigitNumber % 10;
@@ -32,7 +32,7 @@ const indentTwoThree = (twoNumber + threeNumber) / 2 == twoNumber;
 const indent = (firstNumber + twoNumber + threeNumber) / 3 == firstNumber;
 const different = (firstNumber + twoNumber + threeNumber) / 3 != firstNumber;
 if (indent) {
-    result_b = `${threeDigitNumber}  - Identical numbers`;
+    result_b = `${threeDigitNumber}  - the first and second and third numbers are the same`;
 } else if (indentOneTwo) {
     result_b = `${threeDigitNumber}  - the second and third numbers are the same`;
 } else if (indentOneThree) {
@@ -40,7 +40,7 @@ if (indent) {
 } else if (indentTwoThree) {
     result_b = `${threeDigitNumber}  - the first and second numbers are the same`;
 } else if (different) {
-    result_b = `${threeDigitNumber}  - Different numbers`;
+    result_b = `${threeDigitNumber}  - all numbers are different`;
 }
 alert(`${result_a}
 ${result_b}`);

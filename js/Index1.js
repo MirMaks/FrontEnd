@@ -1,9 +1,5 @@
-const givenNumber = Number(prompt('Please enter your number'));
-const lastNumber = givenNumber % 10;
-const even = lastNumber % 2;
-if (even <= 0) {
-    result = (`${lastNumber} - Even`);
-} else if (even > 0) {
-    result = (`${lastNumber} - Not even`);
+for (let i = 20; i <= 30; i = i + 0.5) {
+    console.log(i);
 }
-alert(result);
+
+

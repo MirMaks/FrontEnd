@@ -4,8 +4,7 @@ console.log(act);
 const massangeValue = prompt('Enter numbers separated by a space, with which you want to perform an action');
 const arr = massangeValue.split(' ');
 let arrValue = arr.filter(item = Number);
-let arrValue2 = arrValue.map((item) => item * 1);
-// Только так получилось прировнять к числам, если использовал только фильтер - то считал как строки при сложении.
+let arrValue2 = arrValue.map((item) => parseInt(item));
 console.log(arrValue2);
 if (act === '+') {
     const sum = arrValue2.reduce((acc, number) => acc + number);
